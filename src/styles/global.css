@@ -1,0 +1,32 @@
+/* All Global Styles go here */
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+/* Global Style Variables */
+:root{
+    --color-dark-black: #1E1E1E;
+    --color-white: #fff;
+    --color-gray-2:#8A8B8C;
+    --color-purple: #793EF5;
+    --color-lime-green: #72F500;
+    --color-light-purple: rgba(102, 95, 239, 0.16);
+}
+
+/* How to use these global color variables? 
+    body { 
+        background-color: var(--color-purple); 
+    }
+*/
+
+/* universal CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
