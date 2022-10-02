@@ -15,7 +15,7 @@ const Login = () => {
       <div class="split right">
         <img src={radicalXLogo} className="radicalX-logo"></img>
         <form class="input-fields">
-          <h1>Login</h1>
+          <h1 className='title'>Login</h1>
           <input type="email" id="email" name="email" placeholder="Email" required /><br />
           <input type="password" id="password" name="password" placeholder="Password" required /><br />
           <div>
