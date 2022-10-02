@@ -1,1 +1,15 @@
 /* Styling for Login Page goes here */
+
+/* Main Container enclosing the form + purple containers */
+.main-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+/* Purple container */
+.left-container{
+    background-color: var(--color-purple);
+}
+
+/* TODO: Display only Login Form Container for smaller devices, HINT: responsive media query */
