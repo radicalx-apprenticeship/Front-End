@@ -1,0 +1,106 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: var(--color-purple);
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.input-fields {
+    padding-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#password,
+#email {
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 25px;
+}
+
+#remember-label {
+    font-size: small;
+    color: grey;
+}
+
+#email {
+    background-image: URL('../../assets/email.JPG');
+}
+
+#password {
+    background-image: URL('../../assets/lock.JPG');
+}
+
+input:hover {
+    border-color:var(--color-purple);
+}
+
+input[type=email],
+input[type=password] {
+    width: 360px;
+    height: 48px;
+    border: 1px solid #CECECE;
+    border-radius: 16px;
+    padding: 10px, 16px, 10px, 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;    
+    letter-spacing: 0.3px;
+    background-color: #F5F5F7;
+}
+
+.radicalX-logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+.forget-password {
+    padding-left: 100px;
+    text-decoration: none;
+    color: var(--color-purple);
+}
+.remember-me{
+    color: rgba(47, 48, 49, 0.54);
+}
+.login-button{  
+width: 360px;
+height: 48px;
+border-radius: 16px;
+background-color: var(--color-purple);
+color:var(--color-white);
+line-height: 20px;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.4px;
+margin-top: 10px;
+}
+::placeholder{
+    color: rgba(47, 48, 49, 0.54);
+}
