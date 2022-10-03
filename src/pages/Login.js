@@ -1,5 +1,5 @@
 // Add all Login components here in this file
-import React from 'react'
+import React from "react";
 // CSS Imports
 import '../styles/global.css'
 import '../styles/Login/login.css'
@@ -32,4 +32,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login;

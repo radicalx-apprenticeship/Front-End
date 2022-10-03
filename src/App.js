@@ -1,4 +1,5 @@
-import Login from './pages/Login';
+import "./styles/global.css";
+import Login from "./pages/Login";
 
 function App() {
   return (
