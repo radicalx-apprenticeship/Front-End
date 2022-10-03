@@ -130,3 +130,13 @@ input[type="checkbox"] {
   color: #1e1e1e;
   letter-spacing: 0.4px;
 }
+
+/* Error Text */
+.red {
+  color: brown;
+  background-color: #f8d7d9;
+  width: 50%;
+  padding: 0.5em;
+  border-radius: 1em;
+  margin-top: 2em;
+}

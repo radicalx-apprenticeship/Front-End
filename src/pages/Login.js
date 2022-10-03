@@ -1,22 +1,50 @@
 // Add all Login components here in this file
-import React from "react";
+import React, { useRef, useState } from "react";
 // CSS Imports
 import "../styles/Login/login.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import radicalXLogo from "../assets/RadicallX-Black-Logo 1.png";
 
 const Login = () => {
+  // State Variables
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const { login } = useAuth();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const history = useNavigate();
+
+  // Event Listener
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      setError("");
+      setLoading(true);
+      await login(emailRef.current.value, passwordRef.current.value);
+      history("/");
+    } catch {
+      setError("Failed to log in");
+    }
+
+    setLoading(false);
+  };
+
+  // View Template
   return (
     <div>
-      <div class="split left"></div>
+      <div className="split left"></div>
 
-      <div class="split right">
+      <div className="split right">
         <img src={radicalXLogo} className="radicalX-logo"></img>
-        <form class="input-fields">
+        {error && <h3 className="red">{error}</h3>}
+        <form className="input-fields" onSubmit={handleSubmit}>
           <h1 className="title">Login</h1>
           <input
             type="email"
             id="email"
+            ref={emailRef}
             name="email"
             placeholder="Email"
             required
@@ -25,6 +53,7 @@ const Login = () => {
           <input
             type="password"
             id="password"
+            ref={passwordRef}
             name="password"
             placeholder="Password"
             required
