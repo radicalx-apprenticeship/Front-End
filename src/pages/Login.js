@@ -80,10 +80,6 @@ const Login = () => {
     </div>
   );
 };
-
-export default Login;
-
-
 function ShowAndHidePassword(){
     const [passwordType, setPasswordType] = useState("password");
     const [passwordInput, setPasswordInput] = useState("");
@@ -115,4 +111,5 @@ function ShowAndHidePassword(){
       
     )
 }
-export default ShowAndHidePassword;
+
+export default Login;
