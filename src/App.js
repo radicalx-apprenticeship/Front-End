@@ -9,10 +9,9 @@ import Login from "./pages/Login.js";
 
 
 function App() {
-  render(){
+  render();
     return (
-      <Login />
-      <Router>
+      <><Login /><Router>
         <AuthProvider>
           <Routes>
             {/* Why private route? - so only signed users can access this page!(See PrivateRoute.js for more info) */}
@@ -23,10 +22,10 @@ function App() {
             <Route path="/login" element={<Login />} />
           </Routes>
         </AuthProvider>
-      </Router>
+      </Router></>
 
     );
   }
-}
+
 
 export default App;
