@@ -5,13 +5,13 @@ import PrivateRoute from "./components/Navigation/PrivateRoute";
 import { AuthProvider } from "./context/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import ShowAndHidePassword from "./show-and-hide-password/ShowAndHidePassword";
+import Login from "./pages/Login.js";
 
 
 function App() {
   render(){
     return (
-      <ShowAndHidePassword />
+      <Login />
       <Router>
         <AuthProvider>
           <Routes>
