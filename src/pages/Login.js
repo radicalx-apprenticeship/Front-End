@@ -5,6 +5,7 @@ import "../styles/Login/login.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import radicalXLogo from "../assets/RadicallX-Black-Logo 1.png";
+import { useState } from "react/cjs/react.development";
 
 const Login = () => {
   // State Variables
@@ -81,3 +82,37 @@ const Login = () => {
 };
 
 export default Login;
+
+
+function ShowAndHidePassword(){
+    const [passwordType, setPasswordType] = useState("password");
+    const [passwordInput, setPasswordInput] = useState("");
+    const handlePasswordChange =(evnt)=>{
+        setPasswordInput(evnt.target.value);
+    }
+    const togglePassword =()=>{
+      if(passwordType==="password")
+      {
+       setPasswordType("text")
+       return;
+      }
+      setPasswordType("password")
+    }
+    return(
+        <div className="row">
+            <div className="col-sm-3">
+                <div className="input-group my-4 mx-4">
+                    <input type={passwordType} onChange={handlePasswordChange} value={passwordInput} name="password" class="form-control" placeholder="Password" />
+                    <div className="input-group-btn">
+                     <button className="btn btn-outline-primary" onClick={togglePassword}>
+                     { passwordType==="password"? <i className="bi bi-eye-slash"></i> :<i className="bi bi-eye"></i> }
+                     </button>
+                    </div>
+                </div>
+                
+            </div>
+      </div>
+      
+    )
+}
+export default ShowAndHidePassword;
