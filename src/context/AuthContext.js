@@ -4,6 +4,9 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
+  setPersistence,
+  browserSessionPersistence,
+  browserLocalPersistence,
 } from "firebase/auth";
 
 const AuthContext = React.createContext();
@@ -17,8 +20,12 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   // - Login Function
-  function login(email, password) {
-    return signInWithEmailAndPassword(auth, email, password);
+  async function login(email, password, rememberMe) {
+    const persistenceMethod = rememberMe
+      ? browserLocalPersistence
+      : browserSessionPersistence;
+    await setPersistence(auth, persistenceMethod);
+    await signInWithEmailAndPassword(auth, email, password);
   }
 
   // Logout function
