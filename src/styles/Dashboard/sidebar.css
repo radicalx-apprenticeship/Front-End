@@ -1,0 +1,16 @@
+.sidebar-container {
+  height: auto;
+  background-color: var(--color-white);
+  box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.04);
+  border-radius: 1.6em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-logo {
+  align-self: flex-start;
+  text-align: center;
+  margin: 1em auto;
+  width: 60%;
+}
