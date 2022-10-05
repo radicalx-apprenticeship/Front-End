@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "../components/Navigation/Sidebar";
 import { useAuth } from "../context/AuthContext";
+// CSS Imports
+import "../styles/Dashboard/dashboard.css";
 
 const Dashboard = () => {
   // State Variables
   const [error, setError] = useState("");
-  const { currentUser, logout } = useAuth();
+  const { logout } = useAuth();
   const history = useNavigate();
 
   // Event Listeners
@@ -21,12 +24,14 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
-      {error && <h3 className="red">{error}</h3>}
-      Dashboard
-      <button variant="link" onClick={handleLogout}>
-        Log Out
-      </button>
+    <div className="dashboard-container">
+      <Sidebar />
+      <div>
+        {error && <h3 className="red">{error}</h3>}
+        <button className="logout-btn" variant="link" onClick={handleLogout}>
+          Log Out
+        </button>
+      </div>
     </div>
   );
 };

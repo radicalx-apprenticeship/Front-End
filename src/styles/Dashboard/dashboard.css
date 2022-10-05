@@ -1,0 +1,29 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: var(--color-pale-purple-bg);
+  height: 100vh;
+}
+
+.logout-btn {
+  background-color: var(--color-purple);
+  color: var(--color-pale-purple-bg);
+  font-weight: bold;
+  outline: none;
+  padding: 1em 2em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 1.4em;
+  transition: all;
+}
+
+.logout-btn:hover {
+  cursor: pointer;
+  background-color: var(--color-dark-black);
+  color: var(--color-pale-purple-bg);
+  outline: none;
+  padding: 1em 2em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 1.4em;
+}
