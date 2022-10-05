@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/global.css";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
