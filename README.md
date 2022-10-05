@@ -53,7 +53,10 @@ src
 ## Remember D.R.Y. (Don't Repeat Yourself) - try to reuse code, components wherever applicable and Keep it Simple! :)
 <br />
 <br />
+<br />
 
 ## Creating the Firebase Auth - 
 - Create a .env.local file in the project root, there's a .env.example available for your reference. Add your Firebase Config to the .env.local file.
 - How to set up the Firebase Auth - You can use [this Notion Doc](https://www.notion.so/FE-Firebase-Auth-Setup-Steps-e5b38041c3fb4fa5a5d7c55d6129405f) for steps on creating and setting up Firebase Auth. 
+
+<br />
