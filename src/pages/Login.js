@@ -13,6 +13,7 @@ const Login = () => {
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [rememberMe, setRememberMe] = useState(false);
   const history = useNavigate();
 
   // Event Listener
@@ -22,7 +23,11 @@ const Login = () => {
     try {
       setError("");
       setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
+      await login(
+        emailRef.current.value,
+        passwordRef.current.value,
+        rememberMe
+      );
       history("/");
     } catch {
       setError("Failed to log in");
@@ -66,6 +71,7 @@ const Login = () => {
                 id="remember"
                 name="remember"
                 value="remember"
+                onChange={(e) => setRememberMe(e.target.checked)}
               />
               Remember me
             </label>
