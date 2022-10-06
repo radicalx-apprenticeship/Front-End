@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Navigation/Sidebar";
 import { useAuth } from "../context/AuthContext";
+import AddLogo from "../assets/add-square.svg";
+import { Button } from "../components";
 // CSS Imports
 import "../styles/Dashboard/dashboard.css";
 
@@ -31,6 +33,9 @@ const Dashboard = () => {
         <button className="logout-btn" variant="link" onClick={handleLogout}>
           Log Out
         </button>
+        <Button icon={AddLogo} href="#">
+          Add New Apprenticeship
+        </Button>
       </div>
     </div>
   );
