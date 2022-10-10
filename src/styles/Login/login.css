@@ -38,6 +38,12 @@
   padding-left: 2.5em;
 }
 
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline-width: 1px;
+  outline-color: var(--color-purple);
+}
+
 #remember-label {
   font-size: small;
   color: grey;
@@ -139,4 +145,14 @@ input[type="checkbox"] {
   padding: 0.5em;
   border-radius: 1em;
   margin-top: 2em;
+}
+
+@media screen and (max-width: 880px){
+  .left{
+    display : none;
+  }
+  .split{
+    width : 100%;
+  }
+  
 }

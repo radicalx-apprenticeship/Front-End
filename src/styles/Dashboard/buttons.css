@@ -1,0 +1,10 @@
+.cardButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width : 84px;
+}
+
+#edit, #copy, #delete {
+    border : 0px ; 
+}
