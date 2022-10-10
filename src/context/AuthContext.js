@@ -27,21 +27,21 @@ export function AuthProvider({ children }) {
       : browserSessionPersistence;
     await setPersistence(auth, persistenceMethod);
     await signInWithEmailAndPassword(auth, email, password);
- 
-    auth.currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
-      // Send token to your backend via HTTPS
-      // Sending token
-      const config = {
-      headers: { Authorization: `Bearer ${idToken}` }
-      };
-      axios.post( 
-        url,
-        config
-      ).then(console.log).catch(console.log);
-    }).catch(function(error) {
-      // Handle error
-      console.log(error)
-    });
+
+    auth.currentUser
+      .getIdToken(/* forceRefresh */ true)
+      .then(function (idToken) {
+        // Send token to your backend via HTTPS
+        // Sending token
+        const config = {
+          headers: { Authorization: `Bearer ${idToken}` },
+        };
+        axios.post(url, config).then(console.log).catch(console.log);
+      })
+      .catch(function (error) {
+        // Handle error
+        console.log(error);
+      });
   }
 
   // Logout function
