@@ -9,7 +9,8 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <Sidebar />
-      <div>
+      <div className="page-header">
+        <h1>Apprenticeship</h1>
         <Button icon={AddLogo} href="#">
           Create New Apprenticeship
         </Button>
