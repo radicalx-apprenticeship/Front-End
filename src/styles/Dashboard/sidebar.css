@@ -38,6 +38,20 @@
   border: 1px solid var(--color-purple);
 }
 
+.logout-btn {
+  background-color: transparent;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  border-radius: 1.4em;
+  transition: all;
+}
+
+.logout-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .sidebar-footer {
   margin-left: 2em;
   position: absolute;
