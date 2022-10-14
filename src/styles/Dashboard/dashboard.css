@@ -4,3 +4,12 @@
   background-color: var(--color-pale-purple-bg);
   height: 100vh;
 }
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3em 1.8em;
+  color: var(--color-dark-black);
+}
