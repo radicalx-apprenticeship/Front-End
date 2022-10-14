@@ -1,11 +1,10 @@
 .sidebar-container {
-  height: auto;
   background-color: var(--color-white);
   box-shadow: 0px 12px 34px rgba(0, 0, 0, 0.04);
   border-radius: 1.6em;
-  margin: 1em;
+  margin: 0.7em;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .sidebar-logo {
@@ -13,4 +12,59 @@
   text-align: center;
   margin: 1em auto;
   width: 60%;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 1.4em;
+}
+
+.nav-icon {
+  margin: 0 0.5em;
+}
+
+.link-text {
+  font-size: 1.1em;
+}
+
+.active-link {
+  background-color: var(--color-light-purple);
+  padding: 1em 0;
+  margin: 0 auto;
+  width: 82%;
+  border-radius: 1em;
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+}
+
+.logout-btn {
+  background-color: transparent;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  border-radius: 1.4em;
+  transition: all;
+}
+
+.logout-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar-footer {
+  margin-left: 2em;
+  position: absolute;
+  bottom: 2.4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar {
+  width: 3em;
+  height: 3em;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  margin-right: 1em;
 }
