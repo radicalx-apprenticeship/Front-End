@@ -147,12 +147,11 @@ input[type="checkbox"] {
   margin-top: 2em;
 }
 
-@media screen and (max-width: 880px){
-  .left{
-    display : none;
+@media screen and (max-width: 880px) {
+  .left {
+    display: none;
   }
-  .split{
-    width : 100%;
+  .split {
+    width: 100%;
   }
-  
 }
