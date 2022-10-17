@@ -13,7 +13,7 @@
   margin: 3em 1.8em;
   color: var(--color-dark-black);
 }
-.main-content{
+.main-content {
   display: flex;
   flex-direction: column;
 }
