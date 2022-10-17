@@ -1,8 +1,8 @@
 import React from "react";
 import "../../styles/Dashboard/buttons.css";
-import copyButton from "../../assets/copy.png";
-import deleteButton from "../../assets/delete.png";
-import editButton from "../../assets/edit.png";
+import copyButton from "../../assets/copy.svg";
+import deleteButton from "../../assets/trash.svg";
+import editButton from "../../assets/edit.svg";
 
 const CardButtons = () => {
   return (
