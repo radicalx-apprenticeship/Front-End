@@ -9,4 +9,13 @@
 #copy,
 #delete {
   border: 0px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+#edit:hover,
+#copy:hover,
+#delete:hover{
+  cursor: pointer;
 }

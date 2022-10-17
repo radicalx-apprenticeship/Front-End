@@ -1,36 +1,36 @@
 .cards-content {
-  display: flex;
-  flex-direction: row;
-  margin-left: 1.7em;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto;
+  grid-gap: 1.2em;
+  margin-left: 1em;
 }
 .each {
   background: #fff;
   border-radius: 20px;
-  border: 1px solid #cfd3d9;
-  margin-right: 20px;
-  width: 365px;
-  height: 246px;
-  padding: 20px;
-  gap: 20px;
-}
-
-.card:hover {
-  box-shadow: 1px 1px 2px #d2d2d2;
+  border: 1px solid #cfd3d9; 
+  width: 21em;
+  height: auto;
+  padding: 1em;
 }
 
 .card-title {
-  padding: 15px 20px;
+  padding: .5em;
 }
 
 .card-body {
-  padding-top: 0px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  padding-left: 20px;
+  padding:.5em;
 }
 
 .card-roles {
   padding: 5px 15px 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
