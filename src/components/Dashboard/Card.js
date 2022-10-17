@@ -7,21 +7,25 @@ function Card() {
       id: 1,
       title: "Mobile App Design",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magaliqua.",
+      tags: ["Product Manager", "Frontend Developer", "Backend Developer"],
     },
     {
       id: "2",
       title: "Web Development",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magaliqua.",
+      tags: ["Product Manager", "Frontend Developer", "Backend Developer"],
     },
     {
       id: "3",
       title: "Full Stack Development",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magaliqua.",
+      tags: ["Product Manager", "Frontend Developer", "Backend Developer"],
     },
     {
       id: "4",
       title: "Growth Management",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magaliqua.",
+      tags: ["Product Manager", "Frontend Developer", "Backend Developer"],
     },
   ];
   return (
@@ -34,6 +38,12 @@ function Card() {
             <CardButtons />
           </div>
           <p className="card-body">{post.body}</p>
+          <div className="card-keywords">
+            {/* Apprenticeships tags/keywords */}
+            {/* {post.tags.map((tag) => <p>{tag}</p>)} */}
+            {/* <p>{post.tags}</p> */}
+            <p>{post.tags}</p>
+          </div>
         </div>
       ))}
     </div>

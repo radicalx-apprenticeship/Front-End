@@ -8,18 +8,18 @@
 .each {
   background: #fff;
   border-radius: 20px;
-  border: 1px solid #cfd3d9; 
+  border: 1px solid #cfd3d9;
   width: 21em;
   height: auto;
   padding: 1em;
 }
 
 .card-title {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .card-body {
-  padding:.5em;
+  padding: 0.5em;
 }
 
 .card-roles {
@@ -28,9 +28,18 @@
   justify-content: space-between;
 }
 
-.card-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-keywords {
+  background-color: var(--color-light-purple);
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  border-radius: 1em;
+  padding: 1em;
+  font-weight: 500;
 }

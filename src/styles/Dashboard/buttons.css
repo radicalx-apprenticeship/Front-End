@@ -16,6 +16,6 @@
 
 #edit:hover,
 #copy:hover,
-#delete:hover{
+#delete:hover {
   cursor: pointer;
 }
