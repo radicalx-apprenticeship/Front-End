@@ -16,8 +16,8 @@ const Dashboard = () => {
           <Button icon={AddLogo} href="#">
             Create New Apprenticeship
           </Button>
-          <Card />
         </div>
+        <Card />
       </div>
     </div>
   );
