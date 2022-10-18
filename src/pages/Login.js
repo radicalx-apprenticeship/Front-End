@@ -5,6 +5,7 @@ import "../styles/Login/login.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import radicalXLogo from "../assets/RadicallX-Black-Logo 1.png";
+import { Button } from "../components";
 
 const Login = () => {
   // State Variables
@@ -79,7 +80,7 @@ const Login = () => {
               Forgot password?{" "}
             </a>
           </div>
-          <button className="login-button">Login</button>
+          <Button className="login-button">Login</Button>
         </form>
       </div>
     </div>

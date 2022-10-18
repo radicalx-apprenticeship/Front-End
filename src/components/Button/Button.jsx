@@ -1,5 +1,14 @@
 import styles from "./button.module.css";
-const Button = ({ children, icon, onClick, style, href, disabled, small }) => {
+const Button = ({
+  children,
+  icon,
+  onClick,
+  style,
+  href,
+  className,
+  disabled,
+  small,
+}) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -11,7 +20,7 @@ const Button = ({ children, icon, onClick, style, href, disabled, small }) => {
   return (
     <button
       className={`${styles.btn} ${disabled ? styles["btn--disabled"] : ""} 
-      ${small ? styles["btn--small"] : ""}`}
+      ${small ? styles["btn--small"] : ""} ${className || ""}`}
       onClick={handleClick}
       style={style}
     >
