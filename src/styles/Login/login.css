@@ -115,12 +115,6 @@ input[type="checkbox"] {
   outline: none;
   border: none;
   margin-top: 2em;
-  transition: 0.2s ease-in;
-}
-
-.login-button:hover {
-  cursor: pointer;
-  background: var(--color-dark-black);
 }
 
 ::placeholder {
