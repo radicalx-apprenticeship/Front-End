@@ -1,0 +1,35 @@
+.appren-container{
+    background-color: var(--color-pale-purple-bg);
+    height: 100vh;
+    top: 0;
+    position: fixed; 
+    width: 100%;
+}
+
+.appren-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    margin: .8em;
+    padding: 1.2em;
+    border-radius: 2em;
+    filter: drop-shadow(0px 12px 34px rgba(0, 0, 0, 0.04));
+}
+
+.back-btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.back-button{
+    outline: 0;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-left: .3em;
+}
+
+.back-button:hover{
+    cursor: pointer;
+}
