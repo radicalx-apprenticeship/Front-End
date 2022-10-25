@@ -1,0 +1,15 @@
+.container {
+  width: max(20rem, 50%);
+  margin-inline: auto;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  border: 1px solid #e2e6eb;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
