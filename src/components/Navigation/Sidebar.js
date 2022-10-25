@@ -35,29 +35,29 @@ const Sidebar = () => {
       <img src={radicalXLogo} className="sidebar-logo" alt="RadicalX" />
       <br />
       <div className="nav-link">
-        <img className="nav-icon" src={dashboard} />
+        <img className="nav-icon" alt="" src={dashboard} />
         <p className="link-text">Dashboard</p>
       </div>
       <div className="nav-link active-link">
-        <img className="nav-icon" src={apprencticeship} />
+        <img className="nav-icon" alt="" src={apprencticeship} />
         <p className="link-text">Apprenticeships</p>
       </div>
       <div className="nav-link">
-        <img className="nav-icon" src={book} />
+        <img className="nav-icon" alt="" src={book} />
         <p className="link-text">Internships</p>
       </div>
       <div className="nav-link">
-        <img className="nav-icon" src={briefcase} />
+        <img className="nav-icon" alt="" src={briefcase} />
         <p className="link-text">Jobs</p>
       </div>
       <div className="nav-link">
-        <img className="nav-icon" src={settings} />
+        <img className="nav-icon" alt="" src={settings} />
         <p className="link-text">Settings</p>
       </div>
       {error && <h3 className="red">{error}</h3>}
       {/* Logout */}
       <div className="nav-link">
-        <img className="nav-icon" src={logoutIcon} />
+        <img className="nav-icon" alt="" src={logoutIcon} />
         <button
           className="logout-btn link-text"
           variant="link"
@@ -68,7 +68,7 @@ const Sidebar = () => {
       </div>
       {/* Footer/User */}
       <div className="sidebar-footer">
-        <img className="avatar" src={avatar} />
+        <img className="avatar" alt="" src={avatar} />
         <p>Adam Scott</p>
       </div>
     </div>
