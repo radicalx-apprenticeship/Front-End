@@ -63,7 +63,7 @@ const Login = () => {
       <div className="split left"></div>
 
       <div className="split right">
-        <img src={radicalXLogo} className="radicalX-logo"></img>
+        <img src={radicalXLogo} alt="RadicalX" className="radicalX-logo"></img>
         {error && <h3 className="red">{error}</h3>}
         <form className="input-fields" onSubmit={handleSubmit}>
           <h1 className="title">Login</h1>
@@ -87,7 +87,11 @@ const Login = () => {
             />
             <button className="eye-button" onClick={togglePassword}>
               {/* View Password btn */}
-              {showPassword ? <img src={slashEye} /> : <img src={eye} />}
+              {showPassword ? (
+                <img src={slashEye} alt="" />
+              ) : (
+                <img src={eye} alt="" />
+              )}
             </button>
           </div>
           <br />

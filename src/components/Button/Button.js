@@ -24,7 +24,7 @@ const Button = ({
       onClick={handleClick}
       style={style}
     >
-      {icon && <img src={icon} />}
+      {icon && <img src={icon} alt="" />}
       {children}
     </button>
   );
