@@ -3,6 +3,7 @@ import "./styles/global.css";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Apprenticeship from "./pages/Apprenticeship";
+import PageNotFound from "./pages/PageNotFound";
 import PrivateRoute from "./components/Navigation/PrivateRoute";
 import { AuthProvider } from "./context/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,6 +20,8 @@ function App() {
             {/* TODO: Add other private routes here */}
           </Route>
           <Route path="/login" element={<Login />} />
+          {/* 404 Page */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </AuthProvider>
     </Router>
