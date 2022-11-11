@@ -19,7 +19,9 @@ const Dashboard = () => {
             Create New Apprenticeship
           </Button>
         </div>
-        <Card />
+        <div className="card__container">
+          <Card />
+        </div>
       </div>
     </div>
   );
