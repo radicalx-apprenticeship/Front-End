@@ -1,17 +1,22 @@
+.card__container {
+  width: 100%;
+  padding: 2rem;
+  margin-inline: auto;
+}
 .cards-content {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-auto-rows: auto;
-  grid-gap: 1.2em;
-  margin-left: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(22.625rem, 1fr));
+  gap: 0.5rem;
 }
-.each {
+.card {
   background: #fff;
   border-radius: 20px;
   border: 1px solid #cfd3d9;
-  width: 21em;
-  height: auto;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .card-title {
@@ -35,11 +40,17 @@
   justify-content: space-between;
 }
 
+.card__keyword-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .card-keywords {
   background-color: var(--color-light-purple);
   color: var(--color-purple);
   border: 1px solid var(--color-purple);
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.625rem;
   font-weight: 500;
 }

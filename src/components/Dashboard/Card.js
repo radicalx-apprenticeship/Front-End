@@ -31,18 +31,19 @@ function Card() {
   return (
     <div className="cards-content">
       {posts.map((post) => (
-        <div key={post.id} className="each">
+        <div key={post.id} className="card">
           <div className="card-header">
             {/* Card Header */}
             <h3 className="card-title">{post.title}</h3>
             <CardButtons />
           </div>
           <p className="card-body">{post.body}</p>
-          <div className="card-keywords">
-            {/* Apprenticeships tags/keywords */}
-            {/* {post.tags.map((tag) => <p>{tag}</p>)} */}
-            {/* <p>{post.tags}</p> */}
-            <p>{post.tags}</p>
+          <div className="card__keyword-container">
+            {post.tags.map((tag) => (
+              <p className="card-keywords" key={tag}>
+                {tag}
+              </p>
+            ))}
           </div>
         </div>
       ))}
