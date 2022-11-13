@@ -32,3 +32,16 @@
 body {
   font-family: "Space Grotesk", sans-serif;
 }
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

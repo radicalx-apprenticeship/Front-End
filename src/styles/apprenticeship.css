@@ -39,6 +39,7 @@
   justify-content: space-between;
   align-items: center;
   margin-inline: 1rem;
+  margin-bottom: 2.5rem;
   padding: 1rem;
   border: 1px solid #d0d4da;
   border-radius: 1.25rem;
@@ -55,4 +56,53 @@
 .progress-bar__item--completed {
   font-weight: 500;
   color: var(--color-purple);
+}
+
+.company-title__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+.company-title__container input[type="file"] {
+  display: none;
+}
+
+.company-title__container input[type="text"] {
+  border-radius: 0;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #1e1e1e;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 1.25rem;
+}
+.company-logo:hover {
+  cursor: pointer;
+}
+
+.image-placeholder {
+  width: 5rem;
+  height: 5rem;
+  background-color: #e2e6eb;
+  border-radius: 1.25rem;
+  position: relative;
+}
+
+.image-placeholder::before {
+  content: url("../assets/mountain.svg");
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.image-placeholder:hover {
+  cursor: pointer;
 }
