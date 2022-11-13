@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/global.css";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import Apprenticeship from "./pages/Apprenticeship";
+import Apprenticeship from "./pages/Apprenticeship/Apprenticeship";
 import PageNotFound from "./pages/PageNotFound";
 import PrivateRoute from "./components/Navigation/PrivateRoute";
 import { AuthProvider } from "./context/AuthContext";
