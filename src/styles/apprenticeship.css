@@ -132,6 +132,27 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.video-button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.video-button {
+  display: flex;
+  padding: 0.6125rem 1rem;
+  gap: 1.5rem;
+  background: #edeaff;
+  border-radius: 12px;
+  border: none;
+  color: #793ef5;
+  font-weight: 500;
+}
+.video-button:hover {
+  cursor: pointer;
+}
+
 .team-type {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
