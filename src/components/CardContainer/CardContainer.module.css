@@ -19,6 +19,12 @@
   margin-bottom: 1.5rem;
 }
 
+.container__titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .container__header p {
   font-weight: 500;
   color: #1e1e1e;
