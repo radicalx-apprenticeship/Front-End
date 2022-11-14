@@ -1,8 +1,8 @@
 .appren-container {
   background-color: var(--color-pale-purple-bg);
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
   top: 0;
-  position: fixed;
   width: 100%;
 }
 
@@ -58,6 +58,13 @@
   color: var(--color-purple);
 }
 
+.apprenticeship-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
 .company-title__container {
   display: flex;
   justify-content: flex-start;
@@ -68,9 +75,9 @@
   display: none;
 }
 
-.company-title__container input[type="text"] {
+input[type="text"] {
   border-radius: 0;
-  flex-grow: 1;
+  width: 100%;
   font-size: 1.5rem;
   line-height: 1.5rem;
   display: flex;
@@ -105,4 +112,68 @@
 }
 .image-placeholder:hover {
   cursor: pointer;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px dashed #b2b6bc;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.25rem;
+  width: 100%;
+}
+.video-container input[type="file"] {
+  display: none;
+}
+
+.video-container:hover {
+  cursor: pointer;
+}
+
+.team-type {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+
+.team-type input[type="radio"] {
+  display: none;
+}
+
+.team-type__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  border: 1px solid #cfd3d9;
+  border-radius: 1.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.team-type__container--selected {
+  background-color: #edeaff;
+}
+
+.team-type__container:hover {
+  cursor: pointer;
+}
+
+.team-type__tick {
+  align-self: flex-start;
+}
+.team-type__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.team-type__icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }

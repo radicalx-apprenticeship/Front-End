@@ -45,3 +45,9 @@ textarea,
 select {
   font: inherit;
 }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
